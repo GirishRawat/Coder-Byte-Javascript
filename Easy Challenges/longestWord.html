@@ -1,0 +1,38 @@
+<script type="text/javascript">
+function LongestWord(sen) { 
+  var temp = "";
+  var len = 0;
+  var maxIndex = 0;
+  var counter = 0;
+
+  for(var i = 0; i<sen.length; i++) {
+    if(sen.charAt(i)==' ') {
+    	if(counter>len) {
+    		len = counter;
+    		maxIndex = i - counter;
+    	} 
+
+    	counter = 0;
+    } else {
+    	counter++;
+    }
+  }
+
+  console.log(maxIndex);
+  
+   for(var i = maxIndex; i < maxIndex+len; i++) {
+   	temp += sen.charAt(i);
+   }
+
+   sen = temp;
+   console.log(sen);
+  // code goes here  
+  return sen; 
+          
+}
+   
+// keep this function call here 
+// to see how to enter arguments in JavaScript scroll down
+LongestWord("a b c dee");                            
+
+</script>
