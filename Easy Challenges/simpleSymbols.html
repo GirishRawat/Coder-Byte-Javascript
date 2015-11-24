@@ -1,0 +1,45 @@
+<script type="text/javascript">
+function SimpleSymbols(str) { 
+
+  var flag = 0;
+  var f = 0; // false
+
+  // console.log(str);
+
+  for(var i = 0; i < str.length; i++) {
+
+  	// var t = str.charAt(i).charCodeAt(0);
+  	// console.log(t);
+
+  	if(str.charAt(i).charCodeAt(0)>=97 && str.charAt(i).charCodeAt(0)<=122) {
+  		// console.log("Found a lower case letter!");
+  		flag = 1;
+  	} else if(str.charAt(i).charCodeAt(0)>=65 && str.charAt(i).charCodeAt(0)<=90) {
+  		// console.log("Found an uppercase letter");
+  		flag = 1;
+  	} else {
+  		flag = 0;
+  	}
+
+  	if(flag == 1) {
+  		// console.log("Flag is one!");
+
+  		if(str.charAt(i-1).charCodeAt(0)==43 && str.charAt(i+1).charCodeAt(0)==43) f = 1; // true
+  		else {
+  			f = 0;
+  		}
+  	}
+  }
+
+  if(f == 1) return true;
+  else return false;
+
+  // code goes here  
+  return str; 
+         
+}
+   
+// keep this function call here 
+// to see how to enter arguments in JavaScript scroll down
+console.log(SimpleSymbols("++d+===+c++=+a+"));     
+</script>
