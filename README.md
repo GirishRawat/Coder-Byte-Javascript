@@ -7,6 +7,7 @@ Solutions for all the Javascript challenges in Coder Byte.
     <ol> 
       <li> First Reversal - 24 November 2015</li>
       <li> First Factorial - 24 November 2015</li>
+      <li> Longest Word - In need of rechecking - 24 November 2015</li>
     </ol>
   <li> Medium Challenges</li>
     <ul>
