@@ -1,0 +1,37 @@
+<script type="text/javascript">
+function LetterChanges(str) { 
+  
+  var temp = "";
+
+  for(var i = 0; i < str.length; i ++) {
+
+  	if(str.charAt(i)==" ") {
+  	  	// console.log(" ");
+  		temp += " ";
+  		continue;
+  	}
+
+  	var current = str.charAt(i).charCodeAt(0);
+  	current++;
+
+  	if(current == '97' || current == '101' || current == '105' || current == '111' || current == '117') {
+  		current -= 32;
+  	}  	
+
+  	// console.log(String.fromCharCode(current));
+  	temp += String.fromCharCode(current);
+  }
+
+  str = temp;
+
+  // console.log(str);
+
+  // code goes here  
+  return str; 
+         
+}
+   
+// keep this function call here 
+// to see how to enter arguments in JavaScript scroll down
+LetterChanges("hello world"); 
+</script>
