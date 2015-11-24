@@ -1,5 +1,5 @@
 # Coder-Byte-Javascript
-Solutions for all the Javascript challenges in Coder Byte.
+Solutions for all the Javascript challenges in <a href="http://www.coderbyte.com/">Coder Byte</a>
 
 # Challenges completed
 <ul> 
