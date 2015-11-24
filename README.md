@@ -10,6 +10,7 @@ Solutions for all the Javascript challenges in <a href="http://www.coderbyte.com
       <li> Longest Word - In need of rechecking - 24 November 2015</li>
       <li> Letter changes - 25 November 2015</li>
       <li> Simple Adding - 25 November 2015</li>
+      <li> Letter Capitalize - 25 November 2015</li>
     </ol>
   <li> Medium Challenges</li>
     <ul>

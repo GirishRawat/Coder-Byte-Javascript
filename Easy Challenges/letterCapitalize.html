@@ -1,0 +1,52 @@
+<script type="text/javascript">
+function LetterCapitalize(str) { 
+
+  var temp = "";
+
+  var flag = 1;
+
+    // Capatalise first letter
+  	if(str.charAt(0).charCodeAt(0)>96) {
+  		var t = str.charAt(0).charCodeAt(0);
+  		t -= 32;
+  		temp += String.fromCharCode(t);
+  		 // console.log(temp);
+  	} else {
+  		temp += str.charAt(0);
+  	}
+
+  for(var i = 0; i < str.length; i++) {
+
+  	// console.log(str.charAt(0).charCodeAt(0));
+
+  	if(str.charAt(i) == " ") {
+  		// console.log("blank space");
+
+  		temp += " ";
+
+  		var t = str.charAt(i+1).charCodeAt(0);
+  		t -= 32;
+  		temp += String.fromCharCode(t);
+  		flag = 1;
+  	} else if (flag == 1) {
+  		flag = 0;
+  		continue;
+  	} else {
+  		temp += str.charAt(i);
+  	}
+
+  }
+
+  str = temp;
+
+  // console.log(str);
+
+  // code goes here  
+  return str; 
+         
+}
+   
+// keep this function call here 
+// to see how to enter arguments in JavaScript scroll down
+LetterCapitalize("argument goes here");
+</script>
