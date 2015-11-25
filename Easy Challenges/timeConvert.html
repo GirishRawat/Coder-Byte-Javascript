@@ -1,0 +1,30 @@
+<script type="text/javascript">
+function TimeConvert(num) { 
+
+  var hours = num/60 | 0;
+
+  // console.log(hours);
+
+  var temp;
+
+  if(hours>=1) {
+    temp = num%(hours*60);
+  } else {
+    temp = num;
+  }
+
+  // console.log(temp);
+
+  num = (hours + ":" + temp);
+
+  // console.log(num);
+
+  // code goes here  
+  return num; 
+         
+}
+   
+// keep this function call here 
+// to see how to enter arguments in JavaScript scroll down
+TimeConvert(73);   
+</script>

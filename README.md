@@ -13,6 +13,7 @@ Solutions for all the Javascript challenges in <a href="http://www.coderbyte.com
       <li> Letter Capitalize - 25 November 2015</li>
       <li> Simple Symbols - 25 November 2015</li>
       <li> Check Nums - 25 November 2015</li>
+      <li> Convert Time - 25 November 2015</li>
     </ol>
   <li> Medium Challenges</li>
     <ul>
